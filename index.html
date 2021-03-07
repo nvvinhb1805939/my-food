@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Food</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <nav class="header">
+        <div class="grid">
+            <div class="header__nav">
+                <label for="close-modal" class="header__nav-close-modal">
+                    <i class="header__nav-icon fas fa-bars"></i>
+                </label>
+                <input type="checkbox" hidden id="close-modal" class="header__nav-input">
+                <ul class="header__nav-modal">
+                    <label for="close-modal" class="header__nav-modal-label">Close Menu</label>
+                    <li class="header__nav-modal-item">
+                        <a href="#food" class="header__nav-modal-link">Food</a>
+                    </li>
+                    <li class="header__nav-modal-item">
+                        <a href="#info" class="header__nav-modal-link">About</a>
+                    </li>
+                </ul>
+                <a href="#" class="header__nav-link">My Food</a>
+                <label for="close-modal-subscribe" class="header__nav-link-label">Mail</label>
+                <input type="checkbox" hidden id="close-modal-subscribe" class="header__nav-input-subscribe">
+                <div class="overlay"></div>
+                <div class="modal-subscribe">
+                    <h3 class="modal-subscribe__head">
+                        <span>SUBSCRIBE</span>
+                        <label for="close-modal-subscribe" class="modal-subscribe__close-modal-icon">
+                            <i class="fas fa-times"></i>
+                        </label>
+                    </h3>
+                    <h4 class="modal-subscribe__label">Join my mailing list to receive updates on the latest updates and other things.</h4>
+                    <form action="" class="modal-subscribe__form">
+                        <input type="text" placeholder="Enter your e-mail" class="modal-subscribe__input">
+                        <label for="close-modal-subscribe" class="modal-subscribe__close-modal-label">Subscribe</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="grid">
+            <div id="food" class="main__food">
+                <div class="row">
+                    <div class="col l-3 m-6 s-12">
+                        <a href="" class="main__food-item">
+                            <div class="main__food-item-wrapper">
+                                <div class="main__food-item-img" style="background-image: url('./assets/img/sandwich.jpg');"></div>
+                                <div class="main__food-item-info">
+                                    <h3 class="main__food-item--text-ellipsis main__food-item-name">The Perfect Sandwich, A Real NYC Classic</h3>
+                                    <p class="main__food-item--text-ellipsis main__food-item-desc">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 s-12">
+                        <a href="" class="main__food-item">
+                            <div class="main__food-item-wrapper">
+                                <div class="main__food-item-img" style="background-image: url('./assets/img/steak.jpg');"></div>
+                                <div class="main__food-item-info">
+                                    <h3 class="main__food-item--text-ellipsis main__food-item-name">Let Me Tell You About This Steak</h3>
+                                    <p class="main__food-item--text-ellipsis main__food-item-desc">Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 s-12">
+                        <a href="" class="main__food-item">
+                            <div class="main__food-item-wrapper">
+                                <div class="main__food-item-img" style="background-image: url('./assets/img/cherries.jpg');"></div>
+                                <div class="main__food-item-info">
+                                    <h3 class="main__food-item--text-ellipsis main__food-item-name">Cherries, interrupted</h3>
+                                    <p class="main__food-item--text-ellipsis main__food-item-desc">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 s-12">
+                        <a href="" class="main__food-item">
+                            <div class="main__food-item-wrapper">
+                                <div class="main__food-item-img" style="background-image: url('./assets/img/wine.jpg');"></div>
+                                <div class="main__food-item-info">
+                                    <h3 class="main__food-item--text-ellipsis main__food-item-name">Once Again, Robust Wine and Vegetable Pasta</h3>
+                                    <p class="main__food-item--text-ellipsis main__food-item-desc">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 s-12">
+                        <a href="" class="main__food-item">
+                            <div class="main__food-item-wrapper">
+                                <div class="main__food-item-img" style="background-image: url('./assets/img/popsicle.jpg');"></div>
+                                <div class="main__food-item-info">
+                                    <h3 class="main__food-item--text-ellipsis main__food-item-name">All I Need Is a Popsicle</h3>
+                                    <p class="main__food-item--text-ellipsis main__food-item-desc">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 s-12">
+                        <a href="" class="main__food-item">
+                            <div class="main__food-item-wrapper">
+                                <div class="main__food-item-img" style="background-image: url('./assets/img/salmon.jpg');"></div>
+                                <div class="main__food-item-info">
+                                    <h3 class="main__food-item--text-ellipsis main__food-item-name">Salmon For Your Skin</h3>
+                                    <p class="main__food-item--text-ellipsis main__food-item-desc">Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 s-12">
+                        <a href="" class="main__food-item">
+                            <div class="main__food-item-wrapper">
+                                <div class="main__food-item-img" style="background-image: url('./assets/img/sandwich.jpg');"></div>
+                                <div class="main__food-item-info">
+                                    <h3 class="main__food-item--text-ellipsis main__food-item-name">The Perfect Sandwich, A Real Classic</h3>
+                                    <p class="main__food-item--text-ellipsis main__food-item-desc">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col l-3 m-6 s-12">
+                        <a href="" class="main__food-item">
+                            <div class="main__food-item-wrapper">
+                                <div class="main__food-item-img" style="background-image: url('./assets/img/croissant.jpg');"></div>
+                                <div class="main__food-item-info">
+                                    <h3 class="main__food-item--text-ellipsis main__food-item-name">Le French</h3>
+                                    <p class="main__food-item--text-ellipsis main__food-item-desc">Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="main__food-pagination">
+                    <a href="" class="main__food-pagination-link">«</a>
+                    <a href="" class="main__food-pagination-link main__food-pagination-link--active">1</a>
+                    <a href="" class="main__food-pagination-link">2</a>
+                    <a href="" class="main__food-pagination-link">3</a>
+                    <a href="" class="main__food-pagination-link">4</a>
+                    <a href="" class="main__food-pagination-link">»</a>
+                </div>
+            </div>
+            <div id="info" class="main__info">
+                <h3 class="main__info-head">About Me, The Food Man</h3>
+                <img src="./assets/img/chef.jpg" alt="" class="main__info-img">
+                <div class="main__info-desc">
+                    <h4 class="main__info-desc-head">I am Who I Am!</h4>
+                    <h6 class="main__info-desc-slogan">With Passion For Real, Good Food</h6>
+                    <p class="main__info-desc-content">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="grid">
+            <div class="row">
+                <div class="col l-4 s-12 m-6">
+                    <h3 class="footer__head">FOOTER</h3>
+                    <p class="footer__text">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                    <p class="footer__text">
+                        Powered by
+                        <a href="" class="footer__text-link">w3.css</a>
+                    </p>
+                </div>
+                <div class="col l-4 s-12 m-6">
+                    <h3 class="footer__head">BLOG POSTS</h3>
+                    <ul class="footer__blog-list">
+                        <li class="footer__blog-item">
+                            <a href="" class="footer__blog-link">
+                                <img src="./assets/img/workshop.jpg" alt="" class="footer__blog-link-img">
+                                <div class="footer__blog-link-content">
+                                    <h5 class="footer__blog-link-head">Lorem</h5>
+                                    <p class="footer__text footer__blog-link-desc">Sed mattis nunc</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="footer__blog-item">
+                            <a href="" class="footer__blog-link">
+                                <img src="./assets/img/gondol.jpg" alt="" class="footer__blog-link-img">
+                                <div class="footer__blog-link-content">
+                                    <h5 class="footer__blog-link-head">Ipsum</h5>
+                                    <p class="footer__text footer__blog-link-desc">Praes tinci sed</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-4 s-12 m-6">
+                    <h3 class="footer__head">POPULAR TAGS</h3>
+                    <div class="footer__tags">
+                        <a href="" class="footer__tags-link footer__tags-link--active">Travel</a>
+                        <a href="" class="footer__tags-link">New York</a>
+                        <a href="" class="footer__tags-link">Dinner</a>
+                        <a href="" class="footer__tags-link">Salmon</a>
+                        <a href="" class="footer__tags-link">France</a>
+                        <a href="" class="footer__tags-link">Drinks</a>
+                        <a href="" class="footer__tags-link">Ideas</a>
+                        <a href="" class="footer__tags-link">Flavors</a>
+                        <a href="" class="footer__tags-link">Cuisine</a>
+                        <a href="" class="footer__tags-link">Chicken</a>
+                        <a href="" class="footer__tags-link">Dressing</a>
+                        <a href="" class="footer__tags-link">Fried</a>
+                        <a href="" class="footer__tags-link">Fish</a>
+                        <a href="" class="footer__tags-link">Duck</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

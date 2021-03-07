@@ -1,0 +1,65 @@
+.grid {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.l-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.l-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+
+@media (max-width: 1260px) {
+    .grid {
+        padding: 0 24px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .header__nav-modal {
+        right: 25%;
+    }
+}
+
+@media (min-width: 740px) and (max-width:1023px) {
+    .m-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .modal-subscribe {
+        left: 10%;
+        right: 10%;
+        transform: translate(0, -50%);
+    }
+    
+}
+
+@media (max-width: 739px) {
+    .s-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .modal-subscribe {
+        left: 5%;
+        right: 5%;
+        transform: translate(0, -50%);
+    }
+}

@@ -1,0 +1,369 @@
+/* header css */
+.header {
+    background: linear-gradient(45deg, #33ffff, #ccffff);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+}
+
+.header__nav-close-modal,
+.header__nav-link,
+.header__nav-link-label {
+    display: block;
+    text-decoration: none;
+    color: var(--main-clr);
+    padding: 26px 24px 22px;
+    cursor: pointer;
+}
+
+.header__nav-close-modal {
+    padding: 24px 24px 20px;
+}
+
+.header__nav-close-modal:hover,
+.header__nav-link:hover,
+.header__nav-link-label:hover {
+    background:  #99ffff;
+}
+
+.header__nav-input:checked ~ .header__nav-modal {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.header__nav-input-subscribe:checked ~ .overlay,
+.header__nav-input-subscribe:checked ~ .modal-subscribe {
+    display: block;
+}
+
+
+/* modal css */
+.header__nav-modal {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    background: linear-gradient(45deg, #ffcccc, #ccffff);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 60%;
+    font-weight: 500;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+.header__nav-modal-label,
+.header__nav-modal-link {
+    display: block;
+    text-decoration: none;
+    color: var(--main-clr);
+    padding: 26px 20px 20px;
+    cursor: pointer;
+}
+
+.header__nav-modal-label:hover ,
+.header__nav-modal-link:hover {
+    background: linear-gradient(45deg, #ffcccc, #ccffff);
+}
+
+@keyframes showModal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    animation: showModal linear 0.3s;
+    display: none;
+}
+
+.modal-subscribe {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(45deg, #ffcccc, #ccffff);
+    padding: 50px;
+    animation: showModal 0.4s;
+    display: none;
+}
+.modal-subscribe__head {
+    font-size: 3.4rem;
+    line-height: 4rem;
+    letter-spacing: 4px;
+    color: var(--main-clr);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.modal-subscribe__close-modal-icon {
+    padding: 10px 14px 0 16px;
+}
+
+.modal-subscribe__close-modal-icon:hover {
+    background: #ffcccc;
+    cursor: pointer;
+}
+
+.modal-subscribe__label {
+    color: var(--main-clr);
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+    margin: 15px 0;
+}
+
+.modal-subscribe__input {
+    width: 100%;
+    padding: 16px 12px;
+    border: none;
+    font-size: 1.6rem;
+}
+
+.modal-subscribe__input::placeholder {
+    color: #ccc;
+}
+
+.modal-subscribe__close-modal-label {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 16px 0 10px;
+    margin-top: 16px;
+    background: linear-gradient(45deg, #ffcccc, #b3ffff);
+    color: var(--main-clr);
+}
+
+.modal-subscribe__close-modal-label:hover {
+    cursor: pointer;
+    background: linear-gradient(0, #ffcccc, #b3ffff);
+}
+
+/* main css */
+.main {
+    background: linear-gradient(45deg, #ffcccc, #ccffff);
+    margin-top: 72px;
+}
+
+.main__food {
+    border-bottom: 1px solid var(--main-clr);
+    padding: 8px 0;
+}
+
+.main__food-item {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: var(--txt-clr);
+    margin: 8px 0;
+}
+
+.main__food-item:hover {
+    border: 1px solid var(--main-clr);
+    box-shadow: 0 2px 10px var(--main-clr);
+}
+
+.main__food-item-img {
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main__food-item-info {
+    background: var(--main-clr);
+    padding: 16px;
+    height: 150px;
+}
+
+.main__food-item--text-ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.main__food-item-name {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.main__food-item-desc {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+
+.main__food-pagination {
+    text-align: center;
+    padding: 48px 0;
+}
+
+.main__food-pagination-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--txt-clr);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 10px 16px 6px;    
+    margin: 0 -2px;
+}
+
+.main__food-pagination-link:hover,
+.main__food-pagination-link--active {
+    background: var(--txt-clr);
+    color: var(--main-clr);
+}
+
+.main__food-pagination-link--active:hover {
+    background: #ccc;
+    color: var(--txt-clr);
+}
+
+.main__info {
+    padding: 52px 16px;
+    text-align: center;
+}
+
+.main__info-head {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 3rem;
+    margin: 10px 0 32px;
+}
+
+.main__info-img {
+    max-width: 100%;
+}
+
+.main__info-desc {
+    padding: 32px 0;
+}
+
+.main__info-desc-head {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.main__info-desc-slogan {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 300;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.main__info-desc-content {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin: 15px 0;
+}
+
+/* footer css */
+.footer {
+   background: hsl(180, 90%, 35%);
+   color: var(--main-clr);
+   padding: 52px 8px 32px;
+}
+
+.footer__head {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 400;
+}
+.footer__text {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    font-weight: 300;
+}
+.footer__text-link {
+   color: var(--main-clr);
+}
+
+.footer__blog-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer__blog-item + .footer__blog-item {
+    border-top: 1px solid var(--main-clr);
+}
+
+.footer__blog-link {
+    display: flex;
+    text-decoration: none;
+    color: var(--main-clr);
+    padding: 16px;
+}
+
+.footer__blog-link:hover {
+    background: #089191;
+}
+
+.footer__blog-link-img {
+    height: 50px;
+    margin-right: 16px;
+}
+
+.footer__blog-link-head {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    width: 100%;
+    margin: 0;
+}
+
+.footer__blog-link-desc {
+    margin: 0;
+}
+
+.footer__tags {
+
+}
+
+.footer__tags-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--main-clr);
+    font-size: 1.6rem;
+    background: #33ffff;
+    padding: 6px 8px 2px;
+    margin: 10px 2px;
+}
+
+.footer__tags-link--active {
+    background: #089191;
+    padding: 10px 10px 4px;
+}
+
+.footer__tags-link:hover {
+    filter: grayscale(50%);
+}
+
